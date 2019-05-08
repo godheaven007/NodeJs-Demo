@@ -4,11 +4,14 @@
   "description": "blog demo",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cross-env NODE_ENV=dev nodemon ./bin/www.js",
+    "pro": "cross-env NODE_ENV=productoin nodemon ./bin/www.js"
   },
   "author": "xusf",
   "license": "ISC",
   "dependencies": {
+    "cross-env": "^5.2.0",
     "nodemon": "^1.19.0"
   }
 }
